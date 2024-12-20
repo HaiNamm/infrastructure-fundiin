@@ -16,4 +16,4 @@ spec:
       - name: nginx
         image: hhainam/flask:master-bc58742
         ports:
-        - containerPort: 80
+        - containerPort: 5000
