@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: flask-app
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: flask-app
   replicas: 1
   template:
     metadata:
       labels:
-        app: nginx
+        app: flask-app
     spec:
       containers:
-      - name: nginx
+      - name: flask-app
         image: hhainam/flask:master-bc58742
         ports:
         - containerPort: 5000
